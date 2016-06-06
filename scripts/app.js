@@ -24,8 +24,10 @@ $(document).ready(function() {
 
 var showStudents = function(){
   var student = classInfo.students[studentNum];
-  $('#display').html('<h1>The Nu Cohort</h1><p> First Name: '+ student.first_name + '<br /> Last Name: ' + student.last_name +
-  '<br /> City: ' + student.city  + '<br /> Shout Out: ' + student.shoutout + '</p>').css({"padding":"5px","border":"1px solid black","width":"400px","text-align":"left",
+
+  $('#main').css({"background-color":"#DFDFDF","border": "2px solid #23F309", "padding": "10px", "width":"425px", "margin":"50px auto"});
+  $('#display').html('<h2>The Nu Cohort</h2><p> First Name: '+ student.first_name + '<br /> Last Name: ' + student.last_name +
+  '<br /> City: ' + student.city  + '<br /> Shout Out: ' + student.shoutout + '</p>').css({"padding":"5px","width":"400px","text-align":"left",
   "background-repeat":"no-repeat","background-position":"right","background-image": "url(img/" + studentNum + ".jpg)"});
   $('#display').append((studentNum+1) + ' of 20');
   var viewDiv = document.createElement('div');
